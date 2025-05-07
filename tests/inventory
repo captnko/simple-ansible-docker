@@ -1,5 +1,7 @@
 #SPDX-License-Identifier: MIT-0
 
 [my_hosts]
-192.168.62.243 ansible_user={{ ansible_user }}
+192.168.62.243
+
+
 
