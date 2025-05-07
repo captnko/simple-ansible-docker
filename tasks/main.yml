@@ -2,12 +2,15 @@
 ---
 # tasks file for simple-ansible-docker
 
-
-- name: Install required packages
-  package:
-    name:
-      - yum-utils
-      - device-mapper-persistent-data
-      - lvm2
-    state: present
+- hosts: my_hosts
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Install required packages
+      package:
+        name:
+          - yum-utils
+          - device-mapper-persistent-data
+          - lvm2
+        state: present
   
